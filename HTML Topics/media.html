@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+
+<body>
+
+    <!-- Image -->
+    <img src="/assets/Pic1.jfif" alt="Pic1" width="400" height="300"> <br><br>
+
+    <!-- Picture -->
+    <picture>
+        <source srcset="/assets/Pic2.jfif" media="(min-width: 1000px)">
+        <source srcset="/assets/Pic3.jfif" media="(max-width: 999px)">
+        <img src="/assets/Pic4.jfif" alt="Fallback Image" width="400" height="300">
+    </picture> <br><br>
+
+    <!-- Figure -->
+    <figure>
+        <audio src="/assets/Adhan.mp3" controls>
+            Your browser does not support the audio element.
+        </audio>
+
+        <img src="/assets/Pic4.jfif" alt="">
+
+        <video autoplay muted loop width="220">
+            <source src="/assets/Surah.mp4">
+            Your browser does not support the video element.
+        </video>
+
+        <figcaption>Audio/Image/Video Combine</figcaption>
+    </figure> <br><br>
+
+    <!-- Audio -->
+    <audio src="/assets/Adhan.mp3" controls>Your browser does not support the audio element.</audio> <br><br>
+    <!-- <audio controls>
+        <source src="/assets/Adhan.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio> <br> -->
+
+    <!-- Video -->
+    <video src="/assets/Surah.mp4" controls autoplay muted loop width="400" height="300">Click here to watch
+        Surah</video>
+
+</body>
+
+</html>
