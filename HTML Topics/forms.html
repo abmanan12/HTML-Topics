@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <!-- Form -->
+    <fieldset>
+
+        <legend>Information</legend>
+
+        <form method="get">
+
+            <label for="userName">User Name:</label>
+            <input type="text" id="userName" name="userName" required> <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" min="18" max="60" id="age" name="userAge" required> <br><br>
+
+            <label for="dob">DOB:</label>
+            <input type="date" name="date" id="dob" required> <br><br>
+
+            <input type="checkbox" name="skill" id="html" value="html">
+            <label for="html">HTML</label>
+            <input type="checkbox" name="skill" id="css" value="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="skill" id="js" value="js">
+            <label for="js">JavaScript</label> <br><br>
+
+            <label for="male">Male: </label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female: </label>
+            <input type="radio" name="gender" id="female"> <br><br>
+
+            <label for="experience">Experience:</label>
+            <input type="range" name="experience" id="experience" min="1" max="15"> <br><br>
+
+            <select id="country" name="country">
+                <option value="country" disabled selected>Select Country</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="saudi">Saudi Arabia</option>
+                <option value="uae">UAE</option>
+            </select> <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="userEmail" required> <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" minlength="10" required> <br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+
+    </fieldset> <br>
+    <hr><br>
+
+    <!-- Extra Fields -->
+    <form method="get">
+
+        <input type="search" placeholder="Search"> <br><br>
+
+        <label for="countries">Select Country:</label>
+        <select id="countries" name="country">
+            <option value="" disabled selected>Select Country</option>
+
+            <optgroup label="Asia">
+                <option value="pakistan">Pakistan</option>
+                <option value="india">India</option>
+                <option value="china">China</option>
+            </optgroup>
+
+            <optgroup label="Middle East">
+                <option value="saudi">Saudi Arabia</option>
+                <option value="uae">UAE</option>
+                <option value="qatar">Qatar</option>
+            </optgroup>
+        </select> <br><br>
+
+        <label for="city">Enter City:</label>
+        <input list="cities" id="city" name="city">
+        <datalist id="cities">
+            <option value="Lahore">
+            <option value="Karachi">
+            <option value="Islamabad">
+            <option value="Dubai">
+            <option value="Riyadh">
+        </datalist> <br><br>
+
+        <!-- Progress bar -->
+        <label for="fileUpload">Uploading File:</label>
+        <progress id="fileUpload" value="50" max="100"></progress><br><br>
+
+        <label for="file">Upload Image: </label>
+        <input type="file" name="file" id="file" accept="image/*"> <br><br>
+
+        <!-- <label for="file">Upload Image Type: </label>
+        <input type="file" name="file" id="file" accept=".png, .jpg"> <br><br> -->
+
+        <label for="file">Upload Video: </label>
+        <input type="file" name="file" id="file" accept="video/*"> <br><br>
+
+        <!-- <label for="file">Upload File: </label>
+        <input type="file" name="file" id="file" accept=".pdf, .doc, .docx, .txt, .xls, .xlsx"> <br><br> -->
+
+        <label for="message">Message:</label> <br>
+        <textarea id="message" name="message" style="resize: none;" rows="4" cols="50"></textarea> <br><br>
+
+        <button type="submit">Submit</button> <br><br>
+        <hr><br>
+
+    </form>
+
+
+</body>
+
+</html>
